@@ -86,7 +86,11 @@ main > .d-flex {
 
 .card {
   width: 300px;
+  cursor: pointer;
+  position: relative;
 }
+
+/* image  */
 
 .card-image {
   position: relative;
@@ -96,7 +100,20 @@ main > .d-flex {
   width: 100%;
 }
 
-.card-image .heart {
+.card-image img:last-of-type {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.card:hover img:last-of-type {
+  display: none;
+}
+
+/* image heart  */
+
+.card-image-heart .heart {
   position: absolute;
   top: 10px;
   right: 0;
@@ -104,27 +121,43 @@ main > .d-flex {
   background-color: white;
 }
 
-.card-image .product-info {
-  position: absolute;
-  bottom: 40px;
-  left: 0;
+.card-image-heart .heart:first-of-type {
+  color: red;
 }
 
-.product-info span {
+.card-image-heart .heart:last-of-type {
+  z-index: 1;
+}
+
+.card:hover .heart:last-of-type {
+  display: none;
+}
+
+/* image content  */
+
+.card-image-content {
+  position: absolute;
+  top: 370px;
+  left: 0;
+  z-index: 1;
+}
+
+.card-image-content span {
   margin-right: 2px;
   padding: 5px;
   font-size: 0.8rem;
   color: white;
 }
 
-.product-info span:first-child {
+.card-image-content span:first-child {
   background-color: red;
 } 
 
-.product-info span:last-child {
+.card-image-content span:last-child {
   background-color: green;
 } 
 
+/* info  */
 
 .product-brand {
   font-size: 0.7rem;
