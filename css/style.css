@@ -1,0 +1,14 @@
+/* reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* general  */
+html {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+}
+
+
