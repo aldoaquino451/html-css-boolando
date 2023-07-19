@@ -6,7 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <!-- google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="./css/style.css">
   <title>Boolando</title>
@@ -15,11 +19,10 @@
 
 <body>
   
-  <!-- contenuto in container elementi all'interno allineati in space between  e fisso allo scroll  -->
   <header>
-    <div class="topbar container d-flex">
+    <div class="topbar container d-flex s-between">
 
-      <nav class="menu-left debug">
+      <nav class="d-flex">
         <ul class="d-flex">
           <li><a href="#" target="_blank">Donna</a></li>
           <li><a href="#" target="_blank">Uomo</a></li>
@@ -27,21 +30,54 @@
         </ul>
       </nav>
 
-      <div class="logo debug">
-        <img src="./img/boolean-logo.png" alt="logo">
-      </div>
+      <img class="logo d-flex" src="./img/boolean-logo.png" alt="logo">
 
-      <nav class="menu-right debug">
+      <nav class="d-flex">
         <ul class="d-flex">
-          <li><a href="#" target="_blank">profilo</a></li>
-          <li><a href="#" target="_blank">cuore</a></li>
-          <li><a href="#" target="_blank">carrello</a></li>
+          <li>
+            <a href="#" target="_blank"><i class="fa-regular fa-user"></i></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><i class="fa-regular fa-heart"></i></a>
+          </li>
+          <li>
+            <a href="#" target="_blank"><i class="fa-solid fa-bag-shopping"></i></a>
+          </li>
         </ul>
       </nav>
 
     </div>
   </header>
 
+  <main>
+
+  </main>
+
+  <footer>
+    <div class="container d-flex s-between">
+
+      <div class="info">
+        <h3>Boolando s.r.l.</h3>
+        <ul class="d-flex">
+          <li><a href="#">Informazioni legali</a></li>
+          <li><a href="#">Informativa sulla privacy</a></li>
+          <li><a href="#">Diritto di recesso</a></li>
+        </ul>
+      </div>
+
+      <div class="social">
+        <h3>Trovaci anche su</h3>
+        <ul class="d-flex">
+          <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-square-pinterest"></i> </a></li>
+          <li><a href="#"><i class="fa-brands fa-square-youtube"></i></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
 
 
 </body>
