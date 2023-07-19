@@ -8,7 +8,44 @@
 /* general  */
 html {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 14px;
+  font-size: 16px;
+  color: white;
 }
 
+ul {
+  list-style: none;
+}
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.debug {
+  border: 2px dotted brown;
+}
+
+/* header  */
+header {
+  background-color: orange;
+  padding: 20px 0;
+  /* width: 100%; */
+  height: 100px;
+}
+
+.topbar {
+  justify-content: space-between;
+}
+
+.logo {
+  height: 100px;
+}
+
+.logo img {
+  height: 100%;
+}
